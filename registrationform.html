@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        padding: 10vh;
+        background-color: #d0e8f2;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 2px;
+      }
+      .radio {
+        text-indent: 30px;
+      }
+      .card {
+        border: 7px solid #456268;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-header">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Registration Form</h1>
+            <br />
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" class="form-control" id="firstName" />
+              </div>
+              <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" class="form-control" id="address" />
+              </div>
+              <br />
+              <div class="form-group">
+                <label for="address">Contact Number:</label>
+                <input type="text" class="form-control" id="contact" />
+              </div>
+              <br />
+              <div class="form-group">
+                <label for="gender">Gender:</label>
+                <div>
+                  <label for="male" class="radio">
+                    <input type="radio" name="gender" id="male" />Male</label
+                  >
+                  <label for="female" class="radio">
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="female"
+                    />Female</label
+                  >
+                  <label for="others" class="radio">
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="others"
+                    />Others</label
+                  >
+                </div>
+              </div>
+              <br />
+              <div>
+                <label for="birthday">Birth Date:</label>
+                <input type="date" id="birthday" name="birthday" />
+              </div>
+              <br />
+              <div class="form-group">
+                <label for="weight">Weight(kg's):</label>
+                <input type="text" id="weight" />
+              </div>
+              <br />
+              <div class="form-group">
+                <label for="height">Height(cm's):</label>
+                <input type="text" id="height" />
+              </div>
+              <br />
+              <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="text" class="form-control" id="email" />
+              </div>
+              <br />
+              <div class="form-group">
+                <label for="text">Reason for seeing the doctor:</label>
+                <input type="text" class="form-control" />
+              </div>
+              <br />
+              <a
+                class="btn btn-primary btn-lg"
+                href="http://127.0.0.1:5501/formsubmit.html"
+                role="button"
+                >Submit</a
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
