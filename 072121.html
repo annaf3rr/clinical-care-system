@@ -15,114 +15,135 @@
     body {
       background-color: #D0E8F2;
       }
-    .head {
-      display: flex;
-      justify-content:right;
+     
+
+    .head ul li {
+      display: inline-block;
+      padding: 0px 10px;
+    }
+
+    .head ul li a {
+      text-decoration: none;
+    }
+
+    ul{
+      margin-bottom: 0px;
     }
     .nav {
       display: flex;
       justify-content: flex-end;
       margin-inline: 40px;
     }
-    .container {
-      display: block;
-      width: 100%;
-      padding: 25px 50px;
-    }
+   
     .jumbotron {
-      margin-top: 45vh;
+      height: 100vh;
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 10vh;
     }
     .card {
-      margin-top: 230px;
+      margin-top: 250px;
     }
     </style>
   </head>
   <body>
- <div class="container">
-  <div class="row hr-4">
-    <div>
-    <div class="head"><h1>Clinical Care System</h1></div>
-    <ul class="nav">
-      <li class="nav-item">
-        <a href="http://127.0.0.1:5501/072121.html" class="link-success">Home</a>
-      </li>
-      <ul class="nav">
-        <li class="nav-item">
-          <a href="http://127.0.0.1:5501/072121.html" class="link-success">Flowchart</a>
-        </li>
-        <ul class="nav">
-          <li class="nav-item">
-            <a href="http://127.0.0.1:5501/registrationform.html" class="link-success">Registration Form</a>
-          </li>
+  <div class="container">
+
+      <div class="head row my-3 align-items-center mt-4">
+        <div class="col-md-6">
+          <h1>Clinical Care System</h1>
         </div>
-    
-        <div class="jumbotron">
-          <h2 class="display-5">Hello, Dear Patient.</h2>
-          <p class="lead">
-            Clinical Care team ensures that Lifeline’s content, products, and services uphold the highest standards of medical integrity. Our dedicated team manages an extensive medical network of over 100 professionals covering more than 50 specialties, providing medical review, expert POVs, fact-checking, and clinical guidance. Lifeline’s physicians, nurses, public health experts, and patient advocates help ensure that the information we publish is accurate, evidence-based, current, person-centric, and trustworthy.</p>
-          <hr class="my-4">
-          <p class="lead">
-            <a class="btn btn-primary btn-lg" href="http://127.0.0.1:5501/registrationform.html" role="button">Register Here</a>
-          </p>
+        <div class="col-md-6">
+          <ul>
+            <li class="nav-item">
+              <a href="./072121.html" class="link-success">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Flowchart" class="link-success">Flowchart</a>
+            </li>
+            <li class="nav-item">
+              <a href="./registrationform.html" class="link-success">Registration Form</a>
+            </li>
+          </ul>
         </div>
+      </div>
+  </div>
+
+<div class="container">
+  <div class="jumbotron">
+    <h2 class="display-5">Hello, Dear Patient.</h2>
+    <p class="lead">
+      Clinical Care team ensures that Lifeline’s content, products, and services uphold the highest standards of medical integrity. Our dedicated team manages an extensive medical network of over 100 professionals covering more than 50 specialties, providing medical review, expert POVs, fact-checking, and clinical guidance. Lifeline’s physicians, nurses, public health experts, and patient advocates help ensure that the information we publish is accurate, evidence-based, current, person-centric, and trustworthy.</p>
+    <hr class="my-4">
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="http://127.0.0.1:5506/registrationform.html" role="button">Register Here</a>
+    </p>
   </div>
 </div>
-<div class="card mb-1" style="height: 500px; width: 1000px;" >
-    <div class="col-md-4">
-      <img src="flowchart.png" class="img-fluid rounded-start" alt="Flowchart">
-    </div>
+<div id="Flowchart">
+<div class="container">
+  <h1 class="my-5">Flow Chart</h1>
+  <div class="d-flex justify-content-center">
+    <img src="flowchart.png" class="img-fluid rounded-start" alt="Flowchart">
+  </div>
+  <hr/>
 </div>
-<div class="row">
-  <div class="col-sm-5">
-    <div class="card">
-      <div class="card-body">
-        <h2 class="card-title">Algorithm</h2>
-        <p class="card-text"><ol>
-          <li>Check your temperature and get dress.</li>
-          <li>Decide if your going to clinic and consult your doctor.</li>
-          <li>If No, drink alternative medicine and go home.</li>
-          <li>If Yes, fill-out the clinic form and write all your symptoms.</li>
-          <li>Wait for the availability of the nurse.</li>
-          <li>Proceed to APE which is annual physical examination.</li>
-          <li>Wait for the availability of the doctor.</li>
-          <li>Doctor diagnosed the patient.</li>
-          <li>Buy medicines that prescribed by doctor.</li>
-          <li>Pay the clinical fee, go home and rest.</li>
-        </ol></p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Algorithm</h2>
+          <p class="card-text"><ol>
+            <li>Check your temperature and get dress.</li>
+            <li>Decide if your going to clinic and consult your doctor.</li>
+            <li>If No, drink alternative medicine and go home.</li>
+            <li>If Yes, fill-out the clinic form and write all your symptoms.</li>
+            <li>Wait for the availability of the nurse.</li>
+            <li>Proceed to APE which is annual physical examination.</li>
+            <li>Wait for the availability of the doctor.</li>
+            <li>Doctor diagnosed the patient.</li>
+            <li>Buy medicines that prescribed by doctor.</li>
+            <li>Pay the clinical fee, go home and rest.</li>
+          </ol></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Psuedocode</h2>
+          <p class="card-text"><p>BEGIN</p> 
+          <p style="text-indent: 30px ">BOOLEAN clinic_appointment</p>
+          <p style="text-indent: 30px">STRING patient_details</p> 
+          <p style="text-indent: 30px">IF clinic_appointment EQUAL to YES</p> 
+          <p style="text-indent: 30px">BOOLEAN nurse_available</p>
+          <p style="text-indent: 30px">OUTPUT "Enter Patient Details"</p> 
+          <p style="text-indent: 30px">INPUT patient_details</p>
+          <p style="text-indent: 30px">IF nurse_available IS NOT EQUAL TO yes</p> 
+          <p style="text-indent: 30px">OUTPUT "Kindly wait in the waiting room"</p>  
+          <p>ELSE</p> 
+          <p style="text-indent: 30px">BOOLEAN doctor_available</p> 
+          <p style="text-indent: 30px"> OUTPUT "Kindly proceed to take APE"</p> 
+          <p style="text-indent: 30px"> IF doctor_available IS NOT EQUAL TO yes </p> 
+          <p style="text-indent: 30px">OUTPUT "Kindly wait in the waiting room"</p> 
+          <p> ELSE</p> 
+          <p style="text-indent: 30px">BOOLEAN need_medication</p> 
+          <p style="text-indent: 30px">OUTPUT "Kindly proceed to check up room"</p> 
+          <p style="text-indent: 30px"> IF need_medication</p> 
+          <p style="text-indent: 30px "> OUTPUT "Buy these medicines"</p> 
+          <p style="text-indent: 30px">OUTPUT "Please pay the bill in accounting"</p> 
+          <p>ELSE</p> 
+          <p style="text-indent: 30px ">OUTPUT "Drink Alternative Medicine"</p> 
+          <p>END</p> </p>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h2 class="card-title">Psuedocode</h2>
-        <p class="card-text"><p>BEGIN</p> 
-        <p style="text-indent: 30px ">BOOLEAN clinic_appointment</p>
-        <p style="text-indent: 30px">STRING patient_details</p> 
-        <p style="text-indent: 30px">IF clinic_appointment EQUAL to YES</p> 
-        <p style="text-indent: 30px">BOOLEAN nurse_available</p>
-        <p style="text-indent: 30px">OUTPUT "Enter Patient Details"</p> 
-        <p style="text-indent: 30px">INPUT patient_details</p>
-        <p style="text-indent: 30px">IF nurse_available IS NOT EQUAL TO yes</p> 
-        <p style="text-indent: 30px">OUTPUT "Kindly wait in the waiting room"</p>  
-        <p>ELSE</p> 
-        <p style="text-indent: 30px">BOOLEAN doctor_available</p> 
-        <p style="text-indent: 30px"> OUTPUT "Kindly proceed to take APE"</p> 
-        <p style="text-indent: 30px"> IF doctor_available IS NOT EQUAL TO yes </p> 
-        <p style="text-indent: 30px">OUTPUT "Kindly wait in the waiting room"</p> 
-        <p> ELSE</p> 
-        <p style="text-indent: 30px">BOOLEAN need_medication</p> 
-        <p style="text-indent: 30px">OUTPUT "Kindly proceed to check up room"</p> 
-        <p style="text-indent: 30px"> IF need_medication</p> 
-        <p style="text-indent: 30px "> OUTPUT "Buy these medicines"</p> 
-        <p style="text-indent: 30px">OUTPUT "Please pay the bill in accounting"</p> 
-        <p>ELSE</p> 
-        <p style="text-indent: 30px ">OUTPUT "Drink Alternative Medicine"</p> 
-        <p>END</p> </p>
-      </div>
-    </div>
-  </div>
 </div>
+</div> 
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
